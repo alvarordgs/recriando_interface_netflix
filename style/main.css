@@ -1,3 +1,39 @@
+:root{ /*criação das variaveis das cores principais na raiz da pagina*/
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{ /*reset do css*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*limita o conteudo interno das boxes*/
+}
+
 body{
-    background-color: gray;
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{ /*caixa do cabeçalho*/
+    display: flex; /*organizou os elemetons internos do container na mesma linha*/
+    flex-direction: row; /*propriedade já vem inclusa por padrao no display flex*/
+    align-items: center; /*alinhou os itens verticalmente*/
+    justify-content: space-between; /*criou um espaço entre os elementos do container*/
+}
+
+header .logo{ /*logo netflix*/
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+    margin-left: 8px;
+}
+
+header nav a{ /*estilização dos links do menu*/
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*muda a cor quando o mouse passa em cima dos links do menu*/
+    color: #fff;
 }
