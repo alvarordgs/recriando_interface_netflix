@@ -8,15 +8,37 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container"> <!--box do cabeçalho(menu de navegação)-->
             <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="#">Início</a>
+            <nav><!--conjunto dos links de navegação-->
+                <a href="#">Início</a> <!--links âncora-->
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
             </nav>
         </div>
     </header>
+
+
+    <main>
+        <div class="filme-principal"> <!--box do filme principal-->
+            <div class="container"> <!-- elemento wrapper assim como todos com a classe de mesmo nome, para organizar quandor tiver responsividade-->
+                <h3 class="titulo">THE BOYS</h3>
+                <p class="descricao">
+                    Na trama, conhecemos um mundo em que super-heróis são as maiores celebridades do planeta, e rotineiramente abusam dos seus poderes ao invés de os usarem para o bem.
+                </p>
+                <div class="botoes"> <!-- toda div vem por padrao como display block-->
+                    <button role="button" class="botao"> <!-- a propriedade "role" especifica que esse elemento é um botao-->
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
 </body>
 </html>

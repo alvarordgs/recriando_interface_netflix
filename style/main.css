@@ -9,9 +9,12 @@
     box-sizing: border-box; /*limita o conteudo interno das boxes*/
 }
 
+/*elementos base*/
+
 body{
     background-color: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container{ /*caixa do cabeçalho*/
@@ -36,4 +39,27 @@ header nav a{ /*estilização dos links do menu*/
 
 header nav a:hover{ /*muda a cor quando o mouse passa em cima dos links do menu*/
     color: #fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/img/capa-the-boys.jpg'); /*imagem da serie com uma camada preta transparente para dar contraste ao texto*/
+
+    height: 400px;
+    background-size: cover; /*ocupou toda area do background*/
+
+    display: flex;
+    flex-direction: column; /*organizou os elementos em coluna*/
+    justify-content: center; /*centralizou os elementos verticalmente*/
+    align-items: flex-start; /*organiza os elementos da esquerda pra direita nesse caso*/
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
 }
